@@ -13,6 +13,7 @@ Page({
 
   movieImaError(e) {
     let movieImgIndex = e.currentTarget.dataset.movieimgindex;
+    // console.log(movieImgIndex)
     let { images } = this.data.moviesArr[movieImgIndex];
     images.large = this.data.defaultImg;
     this.setData({
