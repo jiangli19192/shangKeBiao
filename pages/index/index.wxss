@@ -17,6 +17,12 @@ page {
   margin: 100rpx 0; 
 }
 
+button {
+  font-size: 32rpx;
+  border: 1px solid #999;
+  background: #8ED145;
+}
+
 .userName {
   font-size: 32rpx;
   font-weight: bold;

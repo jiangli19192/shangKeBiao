@@ -6,5 +6,6 @@
     "navigationBarBackgroundColor": "#8ED145",
     "navigationBarTitleText": "mini program study",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

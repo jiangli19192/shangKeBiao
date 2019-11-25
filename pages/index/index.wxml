@@ -1,8 +1,9 @@
 <!--pages/index/index.wxml-->
 <view class="indexContainer">
-  <image class="avatar" src="/images/index/a.jpg"></image>
-  <text class="userName">Hello 小程序</text>
-  <view class="goStudy">
-    <text>开户小程序之旅</text>
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <button style='display: {{isShowAuthButton?"block":"none"}}' open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户登陆信息</button>
+  <text class="userName">Hello {{userInfo.nickName}}</text>
+  <view bindtap="bindleParent" class="goStudy">
+    <text bindtap="bindleChild">开户小程序之旅</text>
   </view>
 </view>
