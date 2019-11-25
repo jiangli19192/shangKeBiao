@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/movies/movies",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/editableTable/timeTable",
-    "pages/movies/movies"
+    "pages/editableTable/timeTable"
   ],
   "window": {
     "navigationBarBackgroundColor": "#489B81",

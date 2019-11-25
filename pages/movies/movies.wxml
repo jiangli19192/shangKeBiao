@@ -1,2 +1,12 @@
 <!--pages/movies/movies.wxml-->
-<text>pages/movies/movies.wxml</text>
+<view wx:for="{{moviesArr}}" wx:key="index">
+  <view class="moviesContainer">
+    <image class="movieImg" src="{{item.images.large == null || item.images.large == '' ? '/images/index.cart.jpg' : item.images.large}}" binderror="movieImaError" data-movieImgIndex="{{index}}"></image>
+    <view class="movieDetail">
+      <text class="movie_name">{{item.original_title}}</text>
+      <text class="movie_year">年份:{{item.year}}</text>
+      <text class="movie_director">导演:{{item.directors[0].name}}</text>
+    </view>
+    <text class="movie_rating">{{item.rating.average}}</text>
+  </view>
+</view>
