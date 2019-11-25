@@ -3,19 +3,21 @@
 <view>
   <swiper indicator-dots indicator-color="blue" indicator-active-color="red">
     <swiper-item>
-      <image src='/images/detail/carousel/1.jpg'></image>
+      <image src='/images/detail/carousel/01.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/detail/carousel/2.jpg'></image>
+      <image src='/images/detail/carousel/02.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/detail/carousel/3.jpg'></image>
+      <image src='/images/detail/carousel/03.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/detail/carousel/4.jpg'></image>
+      <image src='/images/detail/carousel/04.jpg'></image>
     </swiper-item>
   </swiper>
-  <view>
-    <template is="listTmp"/>
-  </view>
+  <block wx:for="{{listArr}}" wx:key='index'>
+    <view>
+      <template is="listTmp" data="{{...item}}"/>
+    </view>
+  </block>
 </view>

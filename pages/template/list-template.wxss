@@ -1,6 +1,9 @@
 .tmpContainer {
   display: flex;
   flex-direction: column;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  margin: 20rpx 0;
 }
 
 .avatar_date {

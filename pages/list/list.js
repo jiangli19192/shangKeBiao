@@ -1,18 +1,23 @@
-// pages/list/list.js
+// 引入文件的时候，只能用相对路径
+let datas = require('../../datas/list_data.js')
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    listArr: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      listArr: datas.list_data
+    });
   },
 
   /**
