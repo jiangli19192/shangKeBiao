@@ -15,13 +15,15 @@ Page({
    */
   onLoad: function (options) {
     // onLoad函数只执行一次
+    this.getUserAuthState();
     this.getUserInfo();
   },
 
-  // 根据用户是否授权，控制'获取用户登陆信息'按钮是否显示
-  // 如果用户已经授权，获取用户登陆信息
-  getUserInfo() {
-    //判断用户是否授权
+  /**
+   * 根据用户是否授权，控制'获取用户登陆信息'按钮是否显示
+   * 判断用户是否授权,控制是否显示授权按钮
+   */
+  getUserAuthState() {
     wx.getSetting({
       success: (res) => {
         if (res.authSetting['scope.userInfo']) {
@@ -34,15 +36,6 @@ Page({
             isShowAuthButton: true
           });
         }
-
-        // 获取用户信息，并初始化Data.userInfo对象
-        wx.getUserInfo({
-          success: (data) => {
-            this.setData({
-              userInfo: data.userInfo
-            })
-          }
-        });
       },
       fail: () => {
         console.log('获取用户信息失败!')
@@ -50,9 +43,24 @@ Page({
     })
   },
 
+  /**
+   * 如果用户已经授权，获取用户登陆信息
+   */
+  getUserInfo() {
+    // 获取用户信息，并初始化Data.userInfo对象
+    wx.getUserInfo({
+      success: (data) => {
+        this.setData({
+          userInfo: data.userInfo
+        })
+      }
+    });
+  },
+
   handleGetUserInfo(data) {
     // 未授权回调方法
     if (data.detail.rawData) {
+      this.getUserAuthState();
       this.onLoad();
     }
   },
