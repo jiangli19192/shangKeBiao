@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view class="detailContainer">
+  <image class="headImg" src="/images/detail/carousel/01.jpg"></image>
+  <view class="avatar_date">
+    <image src="/images/avatar/0.png"></image>
+    <text>美国队长</text>
+    <text>发布于</text>
+    <text>may 10 2018</text>
+  </view>
+  <text class="title">尚尚尚尚尚</text>
+  <view class="collection_share_container">
+    <view class="collection_share">
+      <image src="/images/icon/collection-anti.png"></image>
+      <image src="/images/icon/share.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+  <button>转发此文章</button>
+  <text class="content">尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚尚</text>
+</view>
