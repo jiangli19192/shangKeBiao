@@ -1,0 +1,26 @@
+/* pages/editableTable/timeTable.wxss */
+.table {
+    border: 1px solid darkgray;
+    font-size: 12px;
+}
+
+.tr {
+    border: 1px solid darkgray;
+    display: flex;
+    width: 2700rpx;
+    align-items: center;
+}
+
+.td {
+    border: 1px solid darkgray;
+    width: 400rpx;
+    height: 4rem;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    flex-shrink: 0;
+    line-height: 4rem
+}
+.gray{
+    background: '#E6FE3F9';
+}

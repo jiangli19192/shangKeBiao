@@ -1,0 +1,17 @@
+<template name="listTmp">
+  <view class="tmpContainer">
+    <view class="avatar_date">
+      <image src="/images/avatar/1.png"></image>
+      <text>may 19 2018</text>
+    </view>
+    <text class="title">标题1</text>
+    <image class="contentImg" src="/images/detail/carousel/1.jpg"></image>
+    <text class="content">新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,新闻内容详情,</text>
+    <view class="collection_love">
+      <image src="/images/icon/star.png"></image>
+      <text>88</text>
+      <image src="/images/icon/view.png"></image>
+      <text>66</text>
+    </view>
+  </view>
+</template>

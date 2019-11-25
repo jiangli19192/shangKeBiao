@@ -1,4 +1,5 @@
 <!--pages/list/list.wxml-->
+<import src='/pages/template/list-template.wxml' />
 <view>
   <swiper indicator-dots indicator-color="blue" indicator-active-color="red">
     <swiper-item>
@@ -14,4 +15,7 @@
       <image src='/images/detail/carousel/4.jpg'></image>
     </swiper-item>
   </swiper>
+  <view>
+    <template is="listTmp"/>
+  </view>
 </view>

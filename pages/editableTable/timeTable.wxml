@@ -1,0 +1,11 @@
+<!--pages/editableTable/timeTable.wxml-->
+<scroll-view scroll-x style="width: 100%" class="table">
+    <block wx:for="{{tables}}" wx:for-item="table" wx:for-index="table_index" wx:key="table_index">
+        <view class="tr gray" wx:if="{{table_index % 2 == 1}}">
+            <view class="td" wx:for="{{table}}" wx:key="index" wx:item="item" bindtap="openModal" data-id="{{table_index}}">{{item}}</view>
+        </view>
+        <view class="tr" wx:else>
+            <view class="td" wx:for="{{table}}" wx:key="index" wx:item="item" bindtap="openModal" data-id="{{table_index}}">{{item}}</view>
+        </view>
+    </block>
+</scroll-view>

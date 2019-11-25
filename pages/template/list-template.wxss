@@ -1,0 +1,45 @@
+.tmpContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar_date {
+  padding: 10rpx; /*内边距*/
+}
+.avatar_date image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle; /*垂直排列*/
+  margin-right: 10rpx; /*右边距*/
+}
+.avatar_date text {
+  font-size: 32rpx;
+}
+
+.title {
+  margin-left: 10rpx;
+  font-size: 36rpx;
+  font-weight: 700; /*字体加粗*/
+  margin: 10rpx;
+}
+
+.contentImg {
+  width: 100%;
+  height: 460rpx;
+}
+
+.content {
+  font-size: 32rpx;
+  text-indent: 64rpx;/*段落缩进*/
+}
+
+.collection_love image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.collection_love text {
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}

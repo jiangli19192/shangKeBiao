@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/index/index",
-    "pages/list/list"
+    "pages/editableTable/timeTable"
   ],
   "window": {
     "navigationBarBackgroundColor": "#489B81",

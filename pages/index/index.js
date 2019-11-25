@@ -22,7 +22,13 @@ Page({
   openList() {
     // 点击跳转到list页面
     wx.navigateTo({
-      url: '/pages/list/list',
+      url: '/pages/list/list'
+    })
+  },
+
+  openTable() {
+    wx.navigateTo({
+      url: '/pages/editableTable/timeTable'
     })
   },
 

@@ -6,4 +6,7 @@
   <view bindtap="openList" class="goStudy">
     <text>开户小程序之旅</text>
   </view>
+  <view bindtap="openTable" class="goStudy">
+    <text>可编辑表格</text>
+  </view>
 </view>
