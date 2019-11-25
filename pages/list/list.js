@@ -21,6 +21,19 @@ Page({
   },
 
   /**
+   * 打开detail详情页面
+   * 
+   */
+  openDetail(event) {
+    // 获取点击跳转对应的下标
+    let index = event.currentTarget.dataset.index;
+
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index,
+    })
+  },
+
+  /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
