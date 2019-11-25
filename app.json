@@ -3,12 +3,26 @@
     "pages/index/index",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/editableTable/timeTable"
+    "pages/editableTable/timeTable",
+    "pages/movies/movies"
   ],
   "window": {
     "navigationBarBackgroundColor": "#489B81",
     "navigationBarTitleText": "mini program study",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/tab/yuedu.png",
+      "selectedIconPath": "/images/tab/yuedu_hl.png"
+    }, {
+      "pagePath": "pages/movies/movies",
+      "text": "电影",
+      "iconPath": "/images/tab/dianying.png",
+      "selectedIconPath": "/images/tab/dianying_hl.png"
+    }]
   },
   "sitemapLocation": "sitemap.json"
 }
