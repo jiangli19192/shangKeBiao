@@ -3,7 +3,7 @@
   <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
   <button style='display: {{isShowAuthButton?"block":"none"}}' open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户登陆信息</button>
   <text class="userName">Hello {{userInfo.nickName}}</text>
-  <view bindtap="bindleParent" class="goStudy">
-    <text bindtap="bindleChild">开户小程序之旅</text>
+  <view bindtap="openList" class="goStudy">
+    <text>开户小程序之旅</text>
   </view>
 </view>

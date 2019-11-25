@@ -19,6 +19,13 @@ Page({
     this.getUserInfo();
   },
 
+  openList() {
+    // 点击跳转到list页面
+    wx.navigateTo({
+      url: '/pages/list/list',
+    })
+  },
+
   /**
    * 根据用户是否授权，控制'获取用户登陆信息'按钮是否显示
    * 判断用户是否授权,控制是否显示授权按钮
