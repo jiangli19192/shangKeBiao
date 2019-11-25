@@ -1,5 +1,5 @@
 <!--pages/movies/movies.wxml-->
-<view wx:for="{{moviesArr}}" wx:key="index">
+<navigator url="/pages/movieDetail/movieDetail?index={{index}}" wx:for="{{moviesArr}}" wx:key="index">
   <view wx:if="{{index == 3 || index == 5 || index == 9}}"></view>
   <view wx:else class="moviesContainer">
     <image class="movieImg" src="{{item.images.large == null || item.images.large == '' ? '/images/index.cart.jpg' : item.images.large}}" binderror="movieImaError" data-movieImgIndex="{{index}}"></image>
@@ -10,4 +10,4 @@
     </view>
     <text class="movie_rating">{{item.rating.average}}</text>
   </view>
-</view>
+</navigator>
