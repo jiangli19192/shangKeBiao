@@ -73,6 +73,7 @@ Page({
       // 修改appDatas中的数据
       appDatas.data.isPlay = false;
     });
+
   },
 
   handleCollected(event) {
@@ -110,6 +111,7 @@ Page({
         })
       }
     });
+
   },
 
   handleMusicPlay() {
@@ -131,5 +133,19 @@ Page({
       // 暂停音乐
       wx.pauseBackgroundAudio();
     }
+
+  },
+
+  /**
+   * 处理点击分享功能
+   */
+  handleShare() {
+    wx.showActionSheet({
+      itemList: [
+        '分享到朋友圈',
+        '分享到QQ空间',
+        '分享到微博'
+      ],
+    })
   }
 })
