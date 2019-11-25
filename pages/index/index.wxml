@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class="indexContainer">
+  <image class="avatar" src="/images/index/a.jpg"></image>
+  <text class="userName">Hello 小程序</text>
+  <view class="goStudy">
+    <text>开户小程序之旅</text>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#8ED145",
+    "navigationBarTitleText": "mini program study",
+    "navigationBarTextStyle": "black"
+  }
+}
