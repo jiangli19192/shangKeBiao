@@ -9,6 +9,15 @@
   height: 460rpx;
 }
 
+.musicImg {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  margin-left: -30rpx;
+}
+
 .avatar_date {
   padding: 10rpx;
 }

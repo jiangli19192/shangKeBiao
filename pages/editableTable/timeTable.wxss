@@ -1,21 +1,26 @@
 /* pages/editableTable/timeTable.wxss */
 .table {
     border: 1px solid darkgray;
-    font-size: 12px;
+    font-size: 28rpx;
+    border-right: 0rpx;
+    border-bottom: 0rpx;
 }
 
 .tr {
-    border: 1px solid darkgray;
+    width: 50%;
     display: flex;
-    width: 2700rpx;
+    flex-direction: row;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
     align-items: center;
 }
 
 .td {
-    border: 1px solid darkgray;
-    width: 400rpx;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    width: 100%;
     height: 4rem;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     word-wrap: break-word;
     flex-shrink: 0;
@@ -23,4 +28,62 @@
 }
 .gray{
     background: '#E6FE3F9';
+}
+
+.mask-content-container {
+  width: 90%;
+  height: 80rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 20rpx;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+
+.list-mask-title {
+  font-size: 12px;
+}
+
+.list-mask-input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  font-size: 12px;
+}
+
+.submit-btn {
+  margin-top: 20rpx;
+  width: 60%;
+}
+.submit-btn:last-child {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 60%;
+}
+
+.btn-confirm {
+  background: #494949;
+  color: #fff;
+}
+
+.btn {
+  flex-shrink: 0;
+  width: 60%;
+  margin: 20rpx;
+  height: 80rpx;
+  font-size: 12px;
+}
+
+.control-container {
+  width: 100%;
+  height: 134rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: #eee;
+  line-height: 130rpx;
+  font-size: 12px;
+  color: #ccc;
 }

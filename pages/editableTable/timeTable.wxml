@@ -1,7 +1,7 @@
 <!--pages/editableTable/timeTable.wxml-->
 <scroll-view scroll-x style="width: 100%" class="table">
     <block wx:for="{{tables}}" wx:for-item="table" wx:for-index="table_index" wx:key="table_index">
-        <view class="tr gray" wx:if="{{table_index % 2 == 1}}">
+        <view class="tr gray" wx:if="{{table_index % 2 == 0}}">
             <view class="td" wx:for="{{table}}" wx:key="index" wx:item="item" bindtap="openModal" data-id="{{table_index}}">{{item}}</view>
         </view>
         <view class="tr" wx:else>
@@ -9,3 +9,12 @@
         </view>
     </block>
 </scroll-view>
+
+<view wx:if="{{show}}" class="mask-form">
+    <view class="mask-content-container" wx:for="{{cols}}" wx:key="col_index" wx:for-item="col" wx:for-index="col_index">
+        <text class="list-mask-title">{{titles[col_index]}}</text>
+        <input class="list-mask-input" type="text" value="{{col}}" data-id="{{col_index}}" bindblur="dataChange" />
+    </view>
+    <button class="btn btn-confirm" type="success" bindtap="editModel">确认</button>
+    <button class="btn btn-cancle" type="default" bindtap="closeModel">取消</button>
+</view>
