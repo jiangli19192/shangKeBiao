@@ -21,8 +21,20 @@ Page({
   },
 
   /**
+   * 点击轮播图时跳转
+   * target:触发事件的元素
+   */
+  carouselToDetail(event) {
+    let index = event.target.dataset.index;
+
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index,
+    })
+  },
+
+  /**
    * 打开detail详情页面
-   * 
+   * currentTarget: 
    */
   openDetail(event) {
     // 获取点击跳转对应的下标
